@@ -23,7 +23,7 @@ TPSystemeCloche::TPSystemeCloche(QWidget *parent)
 
 	QObject::connect(socket, SIGNAL(connected()), this, SLOT(onSocketConnected()));
 	QObject::connect(socket, SIGNAL(disconnected()), this, SLOT(onSocketDisconnected()));
-	QObject::connect(socket, SIGNAL(readyRead()), this, SLOT(onSocketReadyRead()));
+	
 
 	
     ui.setupUi(this);
@@ -43,6 +43,7 @@ void TPSystemeCloche::keyPressEvent(QKeyEvent *ev)
 	if (ev->key() == Qt::Key_A)
 	{
 		qDebug() << "Cloche 1";
+		ui.label_5->setText("Vous avez active la cloche 1");
 
 		char Cloche1Activation[12];
 		Cloche1Activation[0] = 0x00;
@@ -82,6 +83,7 @@ void TPSystemeCloche::keyPressEvent(QKeyEvent *ev)
 	if (ev->key() == Qt::Key_Z)
 	{
 		qDebug() << "Cloche 2";
+		ui.label_5->setText("Vous avez active la cloche 2");
 
 		char Cloche2Active[12];
 		Cloche2Active[0] = 0x00;
@@ -121,6 +123,7 @@ void TPSystemeCloche::keyPressEvent(QKeyEvent *ev)
 	if (ev->key() == Qt::Key_E)
 	{
 		qDebug() << "Cloche 3";
+		ui.label_5->setText("Vous avez active la cloche 3");
 
 		char Cloche3Active[12];
 		Cloche3Active[0] = 0x00;
@@ -160,6 +163,7 @@ void TPSystemeCloche::keyPressEvent(QKeyEvent *ev)
 	if (ev->key() == Qt::Key_R)
 	{
 		qDebug() << "Cloche 4";
+		ui.label_5->setText("Vous avez active la cloche 4");
 
 		char Cloche4Active[12];
 		Cloche4Active[0] = 0x00;
