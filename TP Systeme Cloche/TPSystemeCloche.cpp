@@ -1,9 +1,9 @@
 #include "TPSystemeCloche.h"
 
 //*********************************************************************************************
-//* Programme : sendToDatabase.cpp date : 30/11/2021
+//* Programme : TpSystemeCloche.cpp date : 30/11/2021
 //*---------------------------------------------------------------------------------------------------------
-//* dernière mise a jour : 30/11/2021
+//* Dernière mise a jour : 30/11/2021
 //*
 //*Programmeurs :  Bernard Léa Febvin Grégory classe : BTSSN2
 //*
